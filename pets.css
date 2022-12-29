@@ -9,16 +9,6 @@
     margin: 0 auto;
 }
 
-button {
-    cursor: pointer;
-}
-
-button:active {
-    box-shadow: 1px 0px 5px 5px rgba(0,0,0,0.49) inset;
-    -webkit-box-shadow: 1px 0px 5px 5px rgba(0,0,0,0.49) inset;
-    -moz-box-shadow: 1px 0px 5px 5px rgba(0,0,0,0.49) inset;
-}
-
 .nav {
     display: flex;
     justify-content: space-between;
@@ -161,10 +151,17 @@ margin-bottom: 60px;
     letter-spacing: 0.06em;
     color: #292929;
     background: rgb(250, 250, 250);
+    cursor: pointer;
 }
 
 .fc-card button:hover {
     border: 2px solid #ffdbc2;
+}
+
+.fc-card button:active {
+    box-shadow: 1px 0px 5px 5px rgba(0,0,0,0.49) inset;
+    -webkit-box-shadow: 1px 0px 5px 5px rgba(0,0,0,0.49) inset;
+    -moz-box-shadow: 1px 0px 5px 5px rgba(0,0,0,0.49) inset;
 }
 
 .fc-box {
@@ -186,11 +183,14 @@ letter-spacing: 0.06em;
 color: #CDCDCD;
 padding: 14px 12px;
 background: #F6F6F6;
+cursor: not-allowed;
 }
 
-.fc-box__left-btn:hover,
-.fc-box__left-btn2:hover {
-    border: 2px solid #dadada;
+.fc-box__right-btn:active,
+.fc-box__right-btn2:active {
+    box-shadow: 1px 0px 5px 5px rgba(0,0,0,0.49) inset;
+    -webkit-box-shadow: 1px 0px 5px 5px rgba(0,0,0,0.49) inset;
+    -moz-box-shadow: 1px 0px 5px 5px rgba(0,0,0,0.49) inset;
 }
 
 .fc-box p {
@@ -218,6 +218,7 @@ letter-spacing: 0.06em;
 color: #CDCDCD;
 padding: 14px 19px;
 background: #F6F6F6;
+cursor: not-allowed;
 }
 
 .fc-box__right-btn {
@@ -232,6 +233,7 @@ letter-spacing: 0.06em;
 color: #292929;
 padding: 14px 19px;
 background: #F6F6F6;
+cursor: pointer;
 }
 
 .fc-box__right-btn:hover,
@@ -251,6 +253,7 @@ letter-spacing: 0.06em;
 color: #292929;
 padding: 14px 12px;
 background: #F6F6F6;
+cursor: pointer;
 }
 
 .footer {
